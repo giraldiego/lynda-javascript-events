@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>JavaScript Events</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <ul id="grid">
-      <li><a href="http://www.google.com"><img src="images/ylw.gif" alt="yellow" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/org.gif" alt="orange" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/ppl.gif" alt="purple" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/blu.gif" alt="blue" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/pnk.gif" alt="pink" id="pink"/></a></li>
-      <li><a href="http://www.google.com"><img src="images/grn.gif" alt="green" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/ygr.gif" alt="ygreen" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/gry.gif" alt="gray" /></a></li>
-      <li><a href="http://www.google.com"><img src="images/red.gif" alt="red" /></a></li>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Events</title>
+  <link href='http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="art">
+  <h2>Art Eliminator</h2>
+  <p>Pick your favorite piece of art through the process of elimination. Click on the pieces you like the least until you are left with a single one. Click on the last image to get some info</p>
+    <ul class="grid">
+      <li><img src="images/Hassum_Harrod_03_tn.jpg" alt="Hassum Harod's Summer Trees"></li>
+      <li><img src="images/LaVonne_LaRue_02_tn.jpg" alt="LaVonne LaRue's Mighty Duck"></li>
+      <li><img src="images/Lorenzo_Garcia_01_tn.jpg" alt="Lorenzo Garcia's The Dancer"></li>
+      <li><img src="images/Jennifer_Jerome_01_tn.jpg" alt="Jennifer Jerome's A day of Rest'"></li>
+      <li><img src="images/Constance_Smith_03_tn.jpg" alt="Constance Smith's Letterforms"></li>
+      <li><img src="images/LaVonne_LaRue_04_tn.jpg" alt="LaVonne LaRue's Flow"></li>
+      <li><img src="images/Lorenzo_Garcia_03_tn.jpg" alt="Lorenzo Garcia's Mother"></li>
+      <li><img src="images/Jennifer_Jerome_02_tn.jpg" alt="Jennifer Jerome's Farm Life"></li>
+      <li><img src="images/Hillary_Goldwynn_03_tn.jpg" alt="Hillary Goldwynn's Blue Sky"></li>
     </ul>
-    <script>
-      document.getElementById("grid").addEventListener("click", function (e) {
-        console.log('Clicked on the grid');
-      });
-
-      document.getElementById("pink").addEventListener("click", function (e) {
-        e.preventDefault();
-        console.log('Clicked on the pink image');
-      });
-    </script>
-  </body>
+    </div>
+  <script src="script.js"></script>
+</body>
 </html>
