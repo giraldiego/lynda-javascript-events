@@ -25,10 +25,30 @@ ul {
 ul li {
   list-style: none;
   display: inline-block;
-  cursor: pointer;
 }
 
-ul li img {
+ul li>img {
   width: 100px;
   border: 1px solid #FCF4DC;
+  cursor: url(images/magnifying_glass.png), auto;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li div.preview {
+  position: absolute;
+  top: -100px;
+  left: 110px;
+  z-index: 100;
+}
+
+ul li div.preview img {
+  max-width: 400px;
+  display: block;
+  border: 1px solid #FCF4DC;
+  -webkit-box-shadow: 5px 5px 12px black;
+  -moz-box-shadow: 5px 5px 12px black;
+  box-shadow: 5px 5px 12px black;
 }
