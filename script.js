@@ -10,5 +10,11 @@ document.querySelector('.grid').addEventListener('mouseover', function(e) {
     const hiresSrc = src.substring(0, src.length - 7) + '.jpg';
     zoomedImg.setAttribute('src', hiresSrc);
     zoomedDiv.appendChild(zoomedImg); // Add IMG to preview div
+
+    e.target.addEventListener('mouseout', function handler(d) {
+      const node = d.target.parentNode.querySelector('div.preview');
+      node.parentNode.removeChild(node);  // Remove preview div from IMG parent
+      e.target.removeEventListener('mouseout', handler, false);
+    }, false); // mouseout event
   } // check to see that I clicked on IMG only
 }, false); // click event
